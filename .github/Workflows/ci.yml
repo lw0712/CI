@@ -28,7 +28,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build Application
-        run: mvn clean package
+        run: ./mvn clean package
 
       - name: Build Docker Image
         run: docker build -t ghcr.io/lw0712/ci-cd:latest
